@@ -16,6 +16,21 @@
         font-weight: 300px;
       }
 
+      .back-land {
+      	background-color: rgba(255,255,255,0.3);
+      }
+
+      .back-land:hover {
+      	background-color: rgba(255,255,255,0.6);
+      }
+
+      .share-land {
+      	background-color: rgba(255,255,255,0.3);
+      }
+
+      .share-land:hover {
+      	background-color: rgba(255,255,255,0.6);
+      }
     	.op {
     		background-image: url(bg1.jpg);
         background-repeat: no-repeat;
@@ -220,7 +235,7 @@ canvas {
   </head>
   <body>
     <div class="container-fluid op text-center">
-      <p class="container-fluid" style="height: 35px; padding-top: 10px; font-size: 16px;"><span class="float-left rounded px-1" style="background-color: rgba(255,255,255,0.3);">Back To Home</span><span class="float-right rounded px-1" style="background-color: rgba(255,255,255,0.3);">Share</span></p>
+      <p class="container-fluid" style="height: 35px; padding-top: 10px; font-size: 16px;"><span class="float-left rounded px-1 back-land" onclick="backland()">Back To Home</span><span class="float-right rounded px-1 share-land">Share</span></p>
       <p style="font-size: 50px;">Today's Track</p>
       <div class="player container-fluid" style="padding-top: 40px;">
         <canvas></canvas>
@@ -266,7 +281,11 @@ canvas {
 
 
 
-
+    <script type="text/javascript">
+    	function backland() {
+    		window.location.href="../landing/buddies-home.html";
+    	}
+    </script>
     <script type="text/javascript" src="mansi-mood-stream.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
